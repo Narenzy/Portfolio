@@ -1,19 +1,37 @@
 <header class="header">
   <div class="container header-container">
     <h2 class="header-title">MAKHANKO TARAS</h2>
-    <button class="menu-button" type="button" aria-label="Open menu">
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="header-icon" width="44" height="44" aria-hidden="true">
         <use href="../img/sprite.svg#icon-menu"></use>
       </svg>
     </button>
-    <ul class="nav-list hidden">
-      <li class="list-item">
-        <nav class="nav">
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <button class="menu-close-button" type="button" aria-label="Close menu">
+        ×
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
           <a href="#work">Work</a>
+        </li>
+
+        <li class="mobile-menu-item">
           <a href="#about">About</a>
+        </li>
+
+        <li class="mobile-menu-item">
           <a href="#contacts">Contacts</a>
-        </nav>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
