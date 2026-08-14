@@ -28,7 +28,7 @@
 .header-icon {
   display: block;
 }
-.mobile-menu {
+.nav {
   position: fixed;
 
   top: 0;
@@ -53,26 +53,10 @@
 
 .list-item {
 }
-.nav {
-  position: fixed;
-  top: 0;
-  right: 0;
 
-  width: 320px;
-  height: 100vh;
-
-  background-color: bisque;
-
-  transform: translate(100%);
-  transition: --transform;
-}
-
-.nav.is-open {
-  transform: translateX(0);
-}
 .close-icon {
 }
 
-.mobile-menu.is-open {
+.nav.is-open {
   transform: translateX(0);
 }
