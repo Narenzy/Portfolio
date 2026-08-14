@@ -46,10 +46,11 @@
 
   z-index: 1000;
 }
-<<<<<<< HEAD
+
 .hidden {
   display: none;
 }
+
 .list-item {
 }
 .nav {
@@ -70,8 +71,8 @@
   transform: translateX(0);
 }
 .close-icon {
-=======
+}
+
 .mobile-menu.is-open {
   transform: translateX(0);
->>>>>>> 3c91d86ba80a2e9224400fcb75ea0678b3da80d4
 }
