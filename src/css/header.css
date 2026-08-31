@@ -51,10 +51,11 @@
   display: none;
 }
 
-.list-item {
-}
+.mobile-menu-item {
+  font-size: 18px;
 
-.close-icon {
+  margin-top: 32px;
+  margin-left: 13px;
 }
 
 .nav.is-open {
