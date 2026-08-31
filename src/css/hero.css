@@ -4,7 +4,7 @@
 .container {
 }
 .hero-content {
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 .hero-title {
   font-family: var(--second-family);

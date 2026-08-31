@@ -1,0 +1,116 @@
+.projects {
+  margin: 80px 0 96px;
+}
+.container {
+}
+.project-section {
+}
+.title-project-section {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  padding-bottom: 12px;
+}
+.text-project-section {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #c7c7c7;
+
+  padding-bottom: 64px;
+}
+.project-list {
+}
+.project-card {
+}
+.project-image-wrapper {
+  width: 343px;
+  height: 343px;
+
+  padding-bottom: 40px;
+}
+.project-image {
+}
+.project-content {
+}
+.project-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #fff;
+  padding-bottom: 16px;
+}
+.project-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #c7c7c7;
+  padding-bottom: 32px;
+}
+.project-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+  padding-bottom: 40px;
+}
+.project-info-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #fff;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #484848;
+}
+.project-info-row {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #fff;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #484848;
+}
+
+.project-info-row:last-child {
+  border-bottom: 1px solid #484848;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #d3e97a;
+
+  border-bottom: 2px solid #d3e97a;
+}
+.project-svg {
+  align-items: center;
+  fill: #d3e97a;
+  transform: translateY(5px);
+
+  width: 22px;
+  height: 22px;
+}
