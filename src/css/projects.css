@@ -103,9 +103,13 @@
   line-height: 150%;
   text-transform: uppercase;
   color: #d3e97a;
+}
 
+.project-link {
+  padding-bottom: 4px;
   border-bottom: 2px solid #d3e97a;
 }
+
 .project-svg {
   align-items: center;
   fill: #d3e97a;
