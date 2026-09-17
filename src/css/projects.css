@@ -118,3 +118,11 @@
   width: 22px;
   height: 22px;
 }
+.project-svg-vector {
+  align-items: center;
+  fill: #d3e97a;
+  transform: translateY(5px);
+
+  width: 16px;
+  height: 22px;
+}
