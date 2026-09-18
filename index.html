@@ -16,49 +16,51 @@
   </head>
   <body>
     <!-- Loads the Headeer section -->
-    <header class="header">
-  <div class="container header-container">
-    <h2 class="header-title">MAKHANKO TARAS</h2>
+    <section>
+  <header class="header">
+    <div class="container header-container">
+      <h2 class="header-title">MAKHANKO TARAS</h2>
 
-    <button
-      class="menu-button"
-      type="button"
-      aria-label="Open menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg class="header-icon" width="44" height="44" aria-hidden="true">
-        <use href="../img/sprite.svg#icon-menu"></use>
-      </svg>
-    </button>
-    <nav class="nav" id="mobile-menu">
-      <button class="close-button" type="button" aria-label="Close menu">
-        <svg
-          class="close-icon"
-          width="24"
-          height="24"
-          aria-hidden="true"
-          aria-label="Close menu"
-        >
-          <use href="../img/sprite.svg#icon-close"></use>
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="header-icon" width="44" height="44" aria-hidden="true">
+          <use href="../img/sprite.svg#icon-menu"></use>
         </svg>
       </button>
-      <ul class="nav-list">
-        <li class="mobile-menu-item">
-          <a href="#work">Work</a>
-        </li>
+      <nav class="nav" id="mobile-menu">
+        <button class="close-button" type="button" aria-label="Close menu">
+          <svg
+            class="close-icon"
+            width="24"
+            height="24"
+            aria-hidden="true"
+            aria-label="Close menu"
+          >
+            <use href="../img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="nav-list">
+          <li class="mobile-menu-item">
+            <a href="#work">Work</a>
+          </li>
 
-        <li class="mobile-menu-item">
-          <a href="#about">About</a>
-        </li>
+          <li class="mobile-menu-item">
+            <a href="#about">About</a>
+          </li>
 
-        <li class="mobile-menu-item">
-          <a href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+          <li class="mobile-menu-item">
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</section>
 
 
     <main>
@@ -181,14 +183,20 @@
       <!-- Loads the About section -->
       <section class="about">
   <div class="container">
-    <div>
-      <p>
+    <div class="about-content">
+      <p class="about-text">
         I am a front-end developer based in Sydney looking for exciting
         opportunities. Has Mechanical Engineering background. Likes to focus on
         accessibility when developing.
       </p>
-      <a href="#">MORE ABOUT ME</a>
-      <img src="../img/hero-img-taras_makhanko.avif" alt="image about me" />
+      <a href="#" class="about-link">MORE ABOUT ME</a>
+      <img
+        src="../img/hero-img-taras_makhanko.avif"
+        class="about-img"
+        alt="image about me"
+        width=""
+        height=""
+      />
     </div>
   </div>
 </section>
