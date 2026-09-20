@@ -1,0 +1,39 @@
+<section id="contacts" class="contacts">
+  <div class="container">
+    <div class="contacts-form">
+      <form action="????API/Contacts" class="form-contact">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          autocomplete="name"
+          maxlength="50"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          required
+          maxlength="100"
+          autocomplete="email"
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          rows="10"
+          cols="30"
+          class="contact-message"
+          minlength="10"
+          maxlength="1000"
+          required
+        ></textarea>
+        <button class="contact-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>

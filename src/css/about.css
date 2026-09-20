@@ -1,12 +1,20 @@
 .about {
-  margin: 40px 0;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 .container {
 }
 .about-content {
-  padding-bottom: 64px;
 }
 .about-link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #d3e97a;
+
+  border-bottom: 2px solid #d3e97a;
 }
 .about-text {
   font-family: var(--font-family);
@@ -14,8 +22,12 @@
   font-size: 18px;
   line-height: 150%;
   color: #c7c7c7;
+
+  padding-bottom: 24px;
 }
 .about-img {
   width: 343px;
   height: auto;
+
+  padding-top: 64px;
 }
