@@ -1,9 +1,57 @@
 <section id="contacts" class="contacts">
   <div class="container">
-    <div class="contacts-form">
-      <form action="????API/Contacts" class="form-contact">
+    <div class="contacts-content">
+      <h2 class="contact-title">Let’s connect</h2>
+      <p class="contacts-text">
+        Say hello at
+        <a href="mailto:mahankotaras@gmail.com">mahankotaras@gmail.com</a>
+      </p>
+      <p class="contacts-text">
+        For more info, here’s my
+        <a href="/resume.pdf" target="_blank">resume</a>
+      </p>
+      <ul class="contacts-social">
+        <li class="contacts-social-items">
+          <a
+            href="https://www.linkedin.com/in/tmakhanko"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Linkedin"
+            ><svg class="contacts-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+        <li class="contacts-social-items">
+          <a
+            href="https://github.com/Narenzy"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="GitHub"
+            ><svg class="contacts-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-github"></use></svg
+          ></a>
+        </li>
+        <li class="contacts-social-items">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X"
+            ><svg class="contacts-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-x"></use></svg
+          ></a>
+        </li>
+        <li class="contacts-social-items">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            ><svg class="contacts-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+      </ul>
+      <form action="#" class="form-contact">
         <label for="name">Name</label>
         <input
+          class="contact-input"
           type="text"
           id="name"
           name="name"
@@ -14,7 +62,8 @@
 
         <label for="email">Email</label>
         <input
-          type="text"
+          class="contact-input"
+          type="email"
           id="email"
           name="email"
           required
@@ -24,6 +73,7 @@
 
         <label for="message">Message</label>
         <textarea
+          id="message"
           name="message"
           rows="10"
           cols="30"
@@ -32,7 +82,7 @@
           maxlength="1000"
           required
         ></textarea>
-        <button class="contact-btn" type="submit">Submit</button>
+        <button class="contact-submit" type="submit">Submit</button>
       </form>
     </div>
   </div>
