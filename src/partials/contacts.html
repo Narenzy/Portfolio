@@ -1,15 +1,19 @@
 <section id="contacts" class="contacts">
   <div class="container">
     <div class="contacts-content">
-      <h2 class="contact-title">Let’s connect</h2>
-      <p class="contacts-text">
-        Say hello at
-        <a href="mailto:mahankotaras@gmail.com">mahankotaras@gmail.com</a>
-      </p>
-      <p class="contacts-text">
-        For more info, here’s my
-        <a href="/resume.pdf" target="_blank">resume</a>
-      </p>
+      <div class="contacts-description">
+        <h2 class="contact-title">Let’s connect</h2>
+        <p class="contacts-text">
+          Say hello at
+          <a href="mailto:mahankotaras@gmail.com" class="contact-mail"
+            >mahankotaras@gmail.com</a
+          >
+        </p>
+        <p class="contacts-text">
+          For more info, here’s my
+          <a href="/resume.pdf" target="_blank" class="contact-cv">resume</a>
+        </p>
+      </div>
       <ul class="contacts-social">
         <li class="contacts-social-items">
           <a
@@ -17,7 +21,12 @@
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Linkedin"
-            ><svg class="contacts-icon" width="24" height="24">
+            ><svg
+              class="contacts-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
               <use href="../img/sprite.svg#icon-linkedin"></use></svg
           ></a>
         </li>
@@ -27,13 +36,23 @@
             rel="noopener noreferrer"
             target="_blank"
             aria-label="GitHub"
-            ><svg class="contacts-icon" width="24" height="24">
+            ><svg
+              class="contacts-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
               <use href="../img/sprite.svg#icon-github"></use></svg
           ></a>
         </li>
         <li class="contacts-social-items">
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X"
-            ><svg class="contacts-icon" width="24" height="24">
+            ><svg
+              class="contacts-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
               <use href="../img/sprite.svg#icon-x"></use></svg
           ></a>
         </li>
@@ -43,45 +62,56 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            ><svg class="contacts-icon" width="24" height="24">
+            ><svg
+              class="contacts-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
               <use href="../img/sprite.svg#icon-instagram"></use></svg
           ></a>
         </li>
       </ul>
       <form action="#" class="form-contact">
-        <label for="name">Name</label>
-        <input
-          class="contact-input"
-          type="text"
-          id="name"
-          name="name"
-          required
-          autocomplete="name"
-          maxlength="50"
-        />
+        <div class="contact-field">
+          <label for="name">Name</label>
+          <input
+            class="contact-input"
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="name"
+            maxlength="50"
+          />
+        </div>
 
-        <label for="email">Email</label>
-        <input
-          class="contact-input"
-          type="email"
-          id="email"
-          name="email"
-          required
-          maxlength="100"
-          autocomplete="email"
-        />
+        <div class="contact-field">
+          <label for="email">Email</label>
+          <input
+            class="contact-input"
+            type="email"
+            id="email"
+            name="email"
+            required
+            maxlength="100"
+            autocomplete="email"
+          />
+        </div>
 
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="10"
-          cols="30"
-          class="contact-message"
-          minlength="10"
-          maxlength="1000"
-          required
-        ></textarea>
+        <div class="contact-field">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="10"
+            cols="30"
+            class="contact-message"
+            minlength="10"
+            maxlength="1000"
+            required
+          ></textarea>
+        </div>
         <button class="contact-submit" type="submit">Submit</button>
       </form>
     </div>
