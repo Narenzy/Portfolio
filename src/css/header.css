@@ -1,5 +1,10 @@
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  background: #0a0a0a;
 }
 
 .header-container {
@@ -9,7 +14,6 @@
 }
 
 .header-title {
-  margin: 0;
   padding: 24px 0;
 
   font-family: var(--second-family);
@@ -34,7 +38,7 @@
   top: 0;
   right: 0;
 
-  width: 80%;
+  width: 100%;
   max-width: 320px;
 
   height: 100dvh;
@@ -42,7 +46,7 @@
   background-color: rgb(74, 74, 74);
 
   transform: translateX(100%);
-  transition: var(--transform);
+  transition: transform 400ms ease;
 
   z-index: 1000;
 }
@@ -60,4 +64,46 @@
 
 .nav.is-open {
   transform: translateX(0);
+}
+
+/* Table */
+
+@media screen and (min-width: 768px) {
+  .menu-button,
+  .close-button {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    max-width: none;
+
+    transform: none;
+    transition: none;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .mobile-menu-item {
+    margin: 0;
+
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #c7c7c7;
+  }
+}
+
+/* Decktop */
+
+@media screen and (min-width: 1280px) {
 }
