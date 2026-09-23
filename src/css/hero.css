@@ -19,7 +19,6 @@
   display: block;
 }
 .hero-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
@@ -88,4 +87,26 @@
   height: 24px;
 }
 .hero-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 500px;
+  }
+  .hero-image-wrapper {
+    flex: 1;
+  }
+  .hero-text {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }

@@ -1,10 +1,11 @@
 .about {
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin: 64px 0;
 }
-.container {
-}
+
 .about-content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 64px;
 }
 .about-link {
   font-family: var(--font-family);
@@ -15,9 +16,9 @@
   color: #d3e97a;
 
   border-bottom: 2px solid #d3e97a;
+  width: 115px;
 }
 .about-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -26,8 +27,24 @@
   padding-bottom: 24px;
 }
 .about-img {
-  width: 343px;
+  width: 100%;
   height: auto;
+}
 
-  padding-top: 64px;
+@media screen and (min-width: 768px) {
+  .about .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .about-content,
+  .about-image-wrapper {
+    flex: 1;
+  }
+  .about-image-wrapper {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
 }
