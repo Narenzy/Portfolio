@@ -5,7 +5,10 @@ import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
+  const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+
   return {
+    base: isGitHubPages ? '/Portfolio/' : '/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
